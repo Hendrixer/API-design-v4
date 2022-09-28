@@ -9,7 +9,7 @@ Every API ever share a common make up. Doesn't matter the language or the enviro
 ## Server
 
 An API is a **Server**. This may seem obvious, but really needs to be understood. A server is an app that has no visual representation and is always running. Usually connected to a network and shared among many clients (UIs, web apps, mobile apps, other servers, etc). Servers usually sit in front of a DB and facilitates access to that DB. There are small exceptions to the Server point here, and that would be Serverless API's. Big difference with them is that they are not always on like a traditional server. Servers must operate on a port, a virtual place on a computers operating system where network connections start and end. Ports assist computers sort their network traffic. A server must also have an IP address, a unique location used to locate a server on a network, like the internet. An IP address helps traffic go to and from a specific devicem whereas a port allows targeting of specific services or apps on a device. An example would look like this:
-`121.0.0.1:5000`. Where `5000` is the port and the rest is the IP address.
+`127.0.0.1:5000`. Where `5000` is the port and the rest is the IP address.
 
 ## Route
 
