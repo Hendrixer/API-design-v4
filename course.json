@@ -1,18 +1,18 @@
 {
   "author": {
-    "name": "Brian Holt",
-    "company": "Stripe"
+    "name": "Scott Moss",
+    "company": "Initialized"
   },
-  "title": "Next.js Course Starter Kit",
+  "title": "API Design with Node.js V4",
   "subtitle": "for Frontend Masters",
-  "frontendMastersLink": "https://frontendmasters.com/courses/complete-react-v6/",
+  "frontendMastersLink": "https://frontendmasters.com/courses/api-design-v4/",
   "social": {
-    "linkedin": "btholt",
-    "github": "btholt",
-    "twitter": "holtbt"
+    "linkedin": "willscottmoss",
+    "github": "hendrixer",
+    "twitter": "scotups"
   },
-  "description": "A starter kit for making really amazing courses, optimized for Frontend Masters",
-  "keywords": ["your", "Google", "keywords", "here"],
-  "productionBaseUrl": "/next-course-starter",
+  "description": "Learn to build APIs with Node.js",
+  "keywords": ["API", "Node.js", "Prisma", "Database"],
+  "productionBaseUrl": "/API-design-v4",
   "csvPath": "./out/lessons.csv"
 }

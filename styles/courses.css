@@ -5,6 +5,13 @@ html {
   font-size: 16px;
 }
 
+code {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px;
+  color: salmon;
+  /* font-weight: bold; */
+}
+
 body,
 h1,
 h2,
@@ -69,6 +76,7 @@ a {
   margin-left: 15px;
   padding: inherit;
   text-transform: uppercase;
+  color: var(--text-main-headers);
 }
 
 .navbar-info {
@@ -353,6 +361,7 @@ blockquote > *:last-child {
 
 .lesson-content {
   line-height: 1.5;
+  color: var(--text-lesson-body);
 }
 
 .lesson-text {
@@ -392,7 +401,7 @@ ol.sections-name .lesson-preface {
   position: relative;
   align-items: center;
   justify-content: center;
-  background: #93aca7;
+  background: var(--bg-lesson-preface);
   font-size: 100px;
   padding: 25px;
   width: 40%;
@@ -466,8 +475,8 @@ ol.sections-name .lesson-details {
   }
 
   ol.sections-name .lesson-preface {
-    font-size:60px
-   }
+    font-size: 60px;
+  }
 }
 
 .lesson-details h3 {
@@ -493,6 +502,7 @@ ol.sections-name .lesson-details {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 0.2s;
 }
 
 .lesson-links a.prev {
@@ -504,7 +514,7 @@ ol.sections-name .lesson-details {
 }
 
 .lesson-links a:hover {
-  background: #152837;
+  background: var(--nav-buttons-hover);
   text-decoration: none;
 }
 

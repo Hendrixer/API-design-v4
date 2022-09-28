@@ -3,11 +3,10 @@ title: "Introduction"
 description: "The introduction to this course."
 ---
 
-Hello! And welcome to the Next.js course starter by [Brian Holt][twitter].
+# Hi,
 
-![Cat, dog, and rat logo for the course](./images/BRAND-WHearts.png)
-
+And welcome to the API Design with v4 course by [Scott Moss][twitter].
 This is a course starter specifically made for making online courses and optimized for use with [Frontend Masters][fem].
 
-[twitter]: https://twitter.com/holtbt
+[twitter]: https://twitter.com/scotups
 [fem]: https://www.frontendmasters.com

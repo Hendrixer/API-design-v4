@@ -1,25 +1,28 @@
 :root {
-  --primary: #dfa067;
-  --secondary: #93aca7;
-  --highlight: #224159;
+  --primary: #673ab7;
+  --secondary: #64ffda;
+  --highlight: white;
 
+  --text-lesson-body: #f4f4f4;
   --text-header: var(--primary);
   --text-main-headers: var(--highlight);
   --text-links: #007bff;
   --text-footer: #333;
 
-  --bg-main: white;
-  --bg-dots: var(--highlight);
-  --bg-lesson: white;
+  --bg-lesson-preface: #333333ff;
+  --bg-main: #000000ff;
+  --bg-dots: var(--bg-main);
+  --bg-lesson: #111111ff;
 
   --nav-buttons: var(--highlight);
-  --nav-buttons-text: white;
+  --nav-buttons-hover: var(--secondary);
+  --nav-buttons-text: var(--bg-main);
 
   --corner-active: var(--highlight);
-  --corner-inactive: #f4f4f4;
+  --corner-inactive: var(--bg-main);
   --icons: var(--highlight);
   --footer-icons: var(--highlight);
 
-  --emphasized-bg: #dce8ff;
-  --emphasized-border: #aab6d2;
+  --emphasized-bg: #333333ff;
+  --emphasized-border: red;
 }
