@@ -54,10 +54,8 @@ export async function getLessons() {
 
   const dir = await fs.readdir(lessonsPath);
   const sections = [];
-
   for (let dirFilename of dir) {
     const dirStats = await fs.lstat(path.join(lessonsPath, dirFilename));
-
     if (dirStats.isFile()) {
       continue;
     }
@@ -150,6 +148,7 @@ export async function getLesson(targetDir, targetFile) {
           // get next
           if (lessonDir[j + 1]) {
             // has next in section
+
             const { slug: next } = slugify(lessonDir[j + 1]);
             nextSlug = `${targetDir}/${next.replace(/\.md$/, "")}`;
           } else if (dir[i + 1]) {
