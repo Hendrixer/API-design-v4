@@ -1,4 +1,4 @@
-We know from our schema that a user needs a unique username and password to be created. So lets create a handler to create a user. Before we can do that, we'll create some helper functions to hash and compare a user's password so we're not storing it in plain text.
+We know from our schema that a user needs a unique username and password. Lets create a handler to create a user. Before we can do that, we'll create some helper functions to hash and compare a user's password so we're not storing it in plain text.
 <br>
 Inside of `src/modules/auth.ts`
 
@@ -14,7 +14,7 @@ export const hashPassword = (password) => {
 };
 ```
 
-`comaprePasswords` comapare a plain text password and hashed password to see if they're the same.
+`comparePasswords` compare a plain text password and hashed password to see if they're the same.
 <br>
 
 `hashPassword` hashes a password.
@@ -44,7 +44,7 @@ First thing here is the prisma import. I'm creating module that exports a Prisma
 <br>
 There isn't anything special going on here other than creating a new user then using that user to create a JWT and sending that token back as a response.
 <br>
-Next, we need to allow a user to signin
+Next, we need to allow a user to sign in.
 
 ```ts
 export const signin = async (req, res) => {
@@ -65,7 +65,7 @@ export const signin = async (req, res) => {
 };
 ```
 
-Using the provided username, we search for a matching user. We'll get more into how to query with Prisma soon. Then we compare passwords. If its a match, we create a JWT and send it back.
+Using the provided username, we search for a matching user. We'll get more into how to query with Prisma soon. Then we compare passwords. If it's a match, we create a JWT and send it back.
 
 <br>
 Now we need to create some routes and add these handlers. We can do this in `src/server.ts`

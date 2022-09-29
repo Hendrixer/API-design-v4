@@ -1,6 +1,6 @@
-We don't want just anyone using our API. Our DB is multitenat, so we need to be able to identify what user is making the request so we can scope their queries and writes to the user. We don't want one user having access to another user's data.
+We don't want just anyone using our API. Our DB is multi-tenat, so we need to identify what user is making the request so we can scope their queries and writes to the user. We don't want one user having access to another user's data.
 <br>
-To ensure all of this, we're going to protect our API. Using tokens is a great approach for this. Things like API Keys and JWT's are good examples of tokens. You could also use Sessions. We're going to use JWTs.
+To ensure all of this, we're going to protect our API. Tokens are a great approach for this. Things like API Keys and JWT's are good examples of tokens. You could also use Sessions. We're going to use JWTs.
 
 ## Creating a JWT
 
@@ -11,7 +11,7 @@ We need to install a few things:
 
 <br>
 
-`npm i jsonwebtokens bcrypt dotenv`
+`npm i jsonwebtoken bcrypt dotenv`
 <br>
 
 Create a new file `src/modules/auth` and add this:
@@ -79,7 +79,7 @@ dotenv.config();
 This will load in our env vars into the process.
 
 <br>
-Lastly, we need to add our middleware onto our API router to protect it, so inside of `src/server.ts`, import protect and:
+Lastly, we need to add our middleware onto our API router to protect it, so inside of `src/server.ts`, import protect and add it to the chain:
 
 ```ts
 app.use("/api", protect, router);
@@ -87,4 +87,4 @@ app.use("/api", protect, router);
 
 Now any API call to anthing `/api` will need to have a JWT.
 <br>
-Next we'll create some routers and handlers to create users that are issued JWTs.
+Next we'll create some routes and handlers to create users that are issued JWTs.
