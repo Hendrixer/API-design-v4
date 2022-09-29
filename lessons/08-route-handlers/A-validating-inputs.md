@@ -8,7 +8,7 @@ So what does input validation look like? We'll be using a package to help us do 
 <br>
 `npm i express-validator --save`
 <br>
-Then, for a route you want to add input validations to:
+For any route, you want to add input validations:
 
 ```ts
 import { body, validationResult } from "express-validator";

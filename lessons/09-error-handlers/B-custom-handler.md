@@ -1,4 +1,4 @@
-We can overwrite the default handler wihwith out own custom one.
+We can overwrite the default handler with our own custom one.
 
 ```ts
 app.use((err, req, res, next) => {
@@ -9,7 +9,7 @@ app.use((err, req, res, next) => {
 });
 ```
 
-This is an example of what a customer error handler might look like. If you use any error reporting service to capture and analyze errors, well here is where you want to report your errors. We can even have many customer handlers, all doing different things. For example, one might log the error, then another reports it to your reporting service, and the last one actually responds to the request.
+This is an example of what a custom error handler might look like. If you use any error reporting service to capture and analyze errors, here is where you want to report your errors. We can even have many custom handlers all doing different things. For example, one might log the error, then another reports it to your reporting service, and the last one actually responds to the request.
 <br>
 We can augment an error however we see fit before passing it to `next`. This will help our custom handler decide on how to handle the actuall error.
 

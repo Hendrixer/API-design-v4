@@ -9,4 +9,4 @@ description: "What is Express.js and why would you want to use it."
 
 ## Other options
 
-There are many other frameworks, some faster, some newer. Many of them have been inspired by or even built on top of Express.js. Its also the one I know the most about 😄.
+There are many other frameworks, some faster, some newer. Many of them have been inspired by or even built on top of Express.js. It's also the one I know the most about 😄.

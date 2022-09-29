@@ -1,8 +1,8 @@
-Lets create an API with express instead of the vanilla one we created earlier.
+Lets create an API with Express instead of the vanilla JavaScript one we created earlier.
 
 ## Dependencies
 
-Before we can use express, we need to install it. Using NPM or Yarn:
+Before we can use Express, we need to install it. Using NPM or Yarn:
 
 `npm i express --save`
 or
@@ -32,4 +32,4 @@ app.listen(port, () => {
 });
 ```
 
-Express literally gives us a framework to build out the business logic of our API's without having to put too much thought into how to make the API functional in the first place.
+Express literally gives us a framework to build out the business logic of our APIs without having to put too much thought into how to make the API functional in the first place.
