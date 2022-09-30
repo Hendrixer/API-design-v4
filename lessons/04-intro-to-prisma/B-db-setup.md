@@ -1,5 +1,5 @@
 ---
-title: "DB setup"
+title: "DB Setup"
 description: "Setup our DB and install Prisma"
 ---
 

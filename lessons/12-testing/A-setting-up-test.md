@@ -1,6 +1,6 @@
 ## Setting up tests
 
-We'll be using `jest` and `supertest` to test our API to ensure it does what we intended to do and continues to do so.
+We'll be using `jest` and `supertest` to test our API. This ensures our code does what we intended and continues to do so.
 <br>
 
 `npm i supertest @types/supertest jest @types/jest ts-jest`

@@ -1,6 +1,6 @@
 ## Unit test
 
-A unit test is all about testing individual pieces of logic independently of each other. You have to make sure you write your code in a way that can be unit testing.
+A unit test is all about testing individual pieces of logic independently of each other. You have to make sure you write your code in a way that can be unit tested.
 
 ```ts
 // not testable
@@ -30,11 +30,11 @@ describe("user handler", () => {
 });
 ```
 
-This is how you might write a unit test in Jest. Each `it` block is an actual test where you usually call come function you want to test, and then create some assertion about what its return value should be. The `describe` function is just for organizing your test.
+This is how you might write a unit test in Jest. Each `it` block is an actual test where you usually call some function you want to test, and then create some assertion about what its return value should be. The `describe` function is just for organizing your test.
 
 ## Integraion test
 
-Unlike a unit test, an integration test will test how an entire route works by actually making a request like a client would then observing what the API sent back and making assertions on that result. We can use jest + supertest to run integration test.
+Integration tests will test how an entire route works by actually making a request to observe what the API sent back and making assertions on that result. We can use jest along with supertest to run integration test.
 
 ```ts
 import app from "../server";

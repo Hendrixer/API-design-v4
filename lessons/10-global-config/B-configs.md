@@ -1,8 +1,8 @@
-Let's create a new file `src/config/index.ts`. Then, for every environment that our server might run in, we'll create a file. Those enviroments are local, staging, and production.
+Let's create a new file `src/config/index.ts`. Then, for every environment, we'll create a file. Those enviroments are local, staging, and production.
 <br>
 <br>
 
-So create, `src/config/local.ts`, `src/config/staging.ts`, `src/config/prod.ts`. Each of one these files will be used to configure variables for their matching env. Depending on the value of the current stage that we're on.
+So create, `src/config/local.ts`, `src/config/staging.ts`, `src/config/prod.ts`. Each of one these files will be used to configure variables for their matching environment.
 
 <br>
 Next, we'll merge the configs together, giving us our final config that we can use anywhere.

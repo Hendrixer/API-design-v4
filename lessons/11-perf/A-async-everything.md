@@ -1,6 +1,6 @@
-Node.js is single threaded by default. A side effect of this is that your code could potentially be blocking the main execution thread. On a server, that is shared by all your clients, this is really bad.
+Node.js is single threaded by default. A side effect of this is that your code could potentially be blocking the main execution thread. On a server that is shared by all your clients, this is really bad.
 <br>
-Your API could fail to take incoming request because it's blocked by CPU intensive work on the main thread. So to avoid this, make sure any itense workload isn't synchronous and instead, async.
+Your API could fail to take incoming request because it's blocked by CPU intensive work on the main thread. To avoid this, make sure any intense workload is asynchronous.
 
 ## Blocking code
 

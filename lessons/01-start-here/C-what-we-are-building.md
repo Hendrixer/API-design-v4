@@ -1,5 +1,5 @@
 ---
-title: "What we're building"
+title: "What We're Building"
 description: "What you'll actually be building in this course"
 ---
 
