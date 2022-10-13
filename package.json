@@ -4,7 +4,7 @@
   "license": "(CC-BY-NC-4.0 OR Apache-2.0)",
   "author": "Scott Moss <willscotmoss+api-design-v4@gmail.com>",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build && npm run csv",
     "export": "next build && next export && npm run csv",
     "start": "next start",

@@ -7,7 +7,7 @@ const myMiddlware = (req, res, next) => {
 };
 ```
 
-This `next` function is exactly what it sounds like. It tells Express that we're done here in the middleware and its safe to proceed to whatever is next (more middleware or a handler).
+This `next` function is exactly what it sounds like. It tells Express that we're done in the middleware and it's safe to proceed to whatever is next (more middleware or a handler).
 <br>
 To apply the middleware to a route, you can do this:
 

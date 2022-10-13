@@ -27,6 +27,10 @@ ul {
   font-weight: normal;
 }
 
+h2, h3 {
+  margin: 1rem 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
