@@ -13,7 +13,7 @@ For any route, you want to add input validations:
 ```ts
 import { body, validationResult } from "express-validator";
 
-app.post("/product", body("name"), (req, res) => {
+app.post("/product", body("name").isString(), (req, res) => {
   const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
