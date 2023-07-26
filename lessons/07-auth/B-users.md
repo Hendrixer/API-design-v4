@@ -49,7 +49,7 @@ Next, we need to allow a user to sign in.
 ```ts
 export const signin = async (req, res) => {
   const user = await prisma.user.findUnique({
-    where: { id: req.body.username },
+    where: { username: req.body.username },
   });
 
   const isValid = await comparePasswords(req.body.password, user.password);
